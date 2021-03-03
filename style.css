@@ -17,13 +17,15 @@ Dark grayish blue: hsl(227, 10%, 46%) */
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   color: #292930;
+  max-width: 720px;
 }
 
 main {
   background-color: var(--dark-cyan);
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +35,9 @@ main {
 
 .card {
   width: 350px;
+  height: 375px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 1rem;
   box-shadow: 1px 2px 20px 1px #888888;
   background: white;
   text-align: center;
@@ -44,20 +47,21 @@ main {
 .card-header {
   background-image: url(images/bg-pattern-card.svg);
   background-size: cover;
-  height: 150px;
+  height: 140px;
 }
 
 .card-body {
-  padding: 0 20px 30px 20px;
+  padding: 0 20px 25px 20px;
+  max-height: 196px;
 }
 
 .profile-img-holder {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: 5px solid white;
   overflow: hidden;
-  margin: -50px auto 30px auto;
+  margin: -50px auto 25px auto;
 }
 
 .profile-img-holder img {
@@ -67,7 +71,7 @@ main {
 }
 h2.name {
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .age,
@@ -75,7 +79,6 @@ h2.name {
 .unit {
   font-weight: 400;
   color: var(--dark-gray);
-  opacity: 0.8;
 }
 
 h2.name > .age {
@@ -91,7 +94,8 @@ h2.name > .age {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px;
+  max-height: 87px;
+  padding: 25px 30px;
 }
 
 .unit {
@@ -101,12 +105,13 @@ h2.name > .age {
 }
 /* Back circles */
 .background-circles img {
-  position: absolute; 
+  position: absolute;
   width: 800px;
   height: auto;
-
 }
-
+.item {
+  flex: 1;
+}
 .background-circles .top-circle {
   top: -400px;
   left: -200px;
